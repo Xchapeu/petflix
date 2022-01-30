@@ -15,21 +15,15 @@
   }
 
   .filme-principal .container .descricao {
-    max-width: 250px;
-    
+    width: 200px;
+  }
+
+  .botoes .btn {
+    padding: 16px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .container img {
-    margin-bottom: 24px;
-  }
-
   .filme-principal {
     background-size: contain no-repeat;
     background-position: 70% 80%;
@@ -40,12 +34,11 @@
   }
 
   .filme-principal .descricao {
-    max-width: 320px;
-  }
-
-  .filme-principal .botoes {
-    display: flex;
-    flex-direction: column;
+    width: 320px;
+    max-width: 250ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .botoes .btn {
@@ -54,5 +47,39 @@
 
   .titulo-filmes {
     font-size: 24px
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .filme-principal .titulo {
+    font-size: 32px;
+  }
+
+  .filme-principal .container .descricao {
+    max-width: 400px;
+  }
+
+  .filme-principal .botoes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filme-principal .botoes .btn {
+    margin-bottom: 8px;
+  }
+
+  .titulo-filmes {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container img {
+    margin-bottom: 24px;
   }
 }

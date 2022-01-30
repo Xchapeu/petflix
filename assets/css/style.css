@@ -96,18 +96,17 @@ header nav a:hover {
   margin-right: 8px;
 }
 
-.carrossel-filmes {
+.carrossel-filmes, .carrossel-series {
   padding: 40px;
 }
 
-.titulo-filmes {
+.titulo-filmes, .titulo-series {
   font-size: 32px;
   margin: 24px 0;
 }
 
-.box-filme {
+.box-filme, .box-serie {
   height: 100%;
   width:100%;
   display: block; 
-
 }

@@ -1,0 +1,113 @@
+:root {
+  --vermelho: #E50914;
+  --preto: #141414;
+  --fonte-cinza: #AAA;
+  --fonte-branca: #FFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--preto);
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--fonte-branca);
+}
+
+/*Header*/
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+header .container img {
+  transition: all .2s ease-in-out;
+}
+
+header .container img:hover {
+  cursor: pointer;
+  width: 190px;
+  height: 55px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--fonte-cinza);
+  margin-right: 10px;
+  transition: all .2s ease-in-out;
+}
+
+header nav a:hover {
+  cursor: pointer;
+  color: var(--fonte-branca);
+}
+
+/*Filme principal*/
+.filme-principal {
+  padding: 40px;
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)100%), url("https://www.themoviedb.org/t/p/original/2ThgE6Z96QLpeIsSfMGMKYGq3Ad.jpg");
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin: 15px 0 15px;
+  width: 430px;
+  text-justify: auto;
+
+}
+
+.filme-principal .titulo {
+  font-size: 40px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botoes .btn {
+  background-color: rgba(0, 0, 0, .50);
+  color: var(--fonte-branca);
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: none;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.botoes .btn:hover {
+  background-color: var(--fonte-branca);
+  color: var(--preto);
+
+}
+
+.btn i {
+  margin-right: 8px;
+}
+
+.carrossel-filmes {
+  padding: 40px;
+}
+
+.titulo-filmes {
+  font-size: 32px;
+  margin: 24px 0;
+}
+
+.box-filme {
+  height: 100%;
+  width:100%;
+  display: block; 
+
+}
